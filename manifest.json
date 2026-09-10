@@ -1,0 +1,35 @@
+{
+  "name": "API 监控工具",
+  "short_name": "API监控",
+  "description": "监测 DeepSeek / GLM 大模型 API 的 token 消耗、剩余额度与余额，支持桌面小组件速览",
+  "lang": "zh-CN",
+  "id": "./",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6fb",
+  "theme_color": "#3b82f6",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "小组件 · 余额速览",
+      "short_name": "小组件",
+      "description": "查看模型名称、剩余额度与已消耗 Token",
+      "url": "./widget.html?source=shortcut",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "消耗记录",
+      "short_name": "记录",
+      "url": "./index.html?page=records",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
